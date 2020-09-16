@@ -48,6 +48,7 @@ body {
   width: 85%;
   margin: 2rem auto;
 }
+
 ol, ul {
 	list-style: none;
 }
@@ -64,13 +65,22 @@ table {
 	border-spacing: 0;
 }
 
+/* Utility */
+.important {
+  color: var(--orange);
+}
+
+hr {
+  border: 1px solid #dfdfdffe;
+  border-radius: 5px;
+}
 
 /* Header */
 
 .logo {
   font-weight: bold;
   font-size: 2rem;
-  letter-spacing: 0.5rem;
+  letter-spacing: 0.2rem;
   margin-bottom: 1.5rem;
   color: var(--orange);
 }
@@ -97,17 +107,14 @@ nav ul a:hover {
 }
 
 nav ul a:last-child {
+  color: #fff;
+  background: var(--orange);
   text-transform: uppercase;
   border: 2px solid var(--orange);
   padding: .3rem 1.2rem;
   border-radius: 5px;
-  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-nav ul a:last-child:hover {
-  color: #fff;
-  background: var(--orange);
-}
 
 
 .media-links i {
@@ -127,4 +134,55 @@ nav ul a:last-child:hover {
 .line {
   border: 2px solid var(--orange);
   border-radius: 5px;
+}
+
+
+/* Banner */
+.banner {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 0;
+  margin-bottom: 1rem;
+}
+
+.banner img {
+  width: 45%;
+  height: auto;
+}
+
+.banner-info {
+  width: 45%;
+}
+
+.banner-info h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: var(--important-text)
+}
+
+.banner-info h4 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .2rem;
+  margin-bottom: 2.5rem;
+  color: var(--regular-text);
+}
+
+.banner-info p {
+  margin-bottom: 2rem;
+  color: var(--regular-text);
+}
+
+.banner-info a {
+  text-decoration: none;
+  color: var(--orange);
+  padding: .3rem 1.2rem;
+  border: 2px solid var(--orange);
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.banner-info a:hover {
+  color: #fff;
+  background: var(--orange);
 }
