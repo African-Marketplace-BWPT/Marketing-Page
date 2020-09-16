@@ -3,6 +3,17 @@
    License: none (public domain)
 */
 
+/* root */
+:root {
+  --important-text: #2b2c2d;
+  --regular-text: #727272;
+  --orange: #f07736;
+  --green: #77925F;
+  --blue: #003348;
+  --beige: #D2B278;
+}
+
+
 /* Reset */
 
 html, body, div, span, applet, object, iframe,
@@ -23,7 +34,8 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+  vertical-align: baseline;
+  
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -31,7 +43,8 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+  line-height: 1;
+  font-family: 'Poppins', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -47,4 +60,76 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+
+
+/* Header */
+
+header {
+  width: 85%;
+  margin: 2rem auto;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(var(--orange) 70%, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Nav bar */
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+nav ul a {
+  font-size: 1rem;
+  color: var(--important-text);
+  text-transform: lowercase;
+  text-decoration: none;
+  margin-right: 2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul a:hover {
+  color: var(--orange)
+}
+
+nav ul a:last-child {
+  text-transform: uppercase;
+  border: 2px solid var(--orange);
+  padding: .3rem 1.2rem;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+nav ul a:last-child:hover {
+  color: #fff;
+  background: var(--orange);
+}
+
+
+.media-links i {
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  color: var(--regular-text);
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.media-links i:hover {
+  color: var(--orange);
+}
+
+/* HR */
+
+.line {
+  border: 2px solid var(--orange);
+  border-radius: 5px;
 }
