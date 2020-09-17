@@ -189,7 +189,7 @@ nav ul a:last-child {
 
 /* service section */
 
-.service {
+section {
   padding: 4rem 0;
 }
 
@@ -234,4 +234,69 @@ nav ul a:last-child {
   color: var(--important-text);
   margin-bottom: .5rem;
   font-weight: bold;
+}
+
+/* Reviews section */
+
+
+
+.reviews h3 {
+  width: 10%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--important-text);
+  padding: 0 0.5rem .5rem 0;
+  border-bottom: 2px solid var(--orange);
+  margin-bottom: 2rem;
+}
+
+.review-container {
+  width: 40%;
+  margin: 3rem auto;
+  text-align: center;
+  padding: 2rem;
+  background: #828869;
+  box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
+
+}
+
+.review-container h4 {
+  color: var(--important-text);
+  font-weight: bold;
+  margin-bottom: .4rem;
+}
+
+.review-container p:nth-child(3){
+  color: var(--orange);
+  font-weight: bold;
+  margin-bottom: .8rem;
+}
+
+.review-container p:last-child {
+  color: rgb(33, 34, 52);
+}
+
+.review-container img {
+  width: 30%;
+  border-radius: 100%;
+  margin-bottom: 1rem;
+}
+
+.button-container {
+  margin-top: 2rem;
+}
+
+.button-container button {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  color: var(--orange);
+  cursor: pointer;
+}
+
+.button-container i {
+  padding: 0 .5rem;
 }
