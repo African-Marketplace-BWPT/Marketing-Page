@@ -20,7 +20,7 @@ const reviews = [
   name: "Rex",
   job: "CEO of The Clones",
   img: "images/rex.png",
-  text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat doloribus architecto, itaque corrupti rerum iusto."
+  text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat doloribus architecto, itaque corrupti rerum iusto. Lorem ipsum."
 }
 ];
 
