@@ -75,9 +75,23 @@ prevBtn.addEventListener('click', function() {
 const menu = document.querySelector('#mobile-menu');
 const menuLinks = document.querySelector('.navbar');
 const overlay = document.getElementById('overlay');
+const links = document.querySelector('.navbar > ul')
 
 menu.addEventListener('click', function(){
   menu.classList.toggle('is-active');
   menuLinks.classList.toggle('active');
   overlay.classList.toggle('on');
+  
 });
+
+overlay.addEventListener('click', function() {
+  menu.classList.remove('is-active');
+  menuLinks.classList.remove('active');
+  overlay.classList.remove('on');
+});
+
+links.addEventListener('click', function() {
+  menu.classList.remove('is-active');
+  menuLinks.classList.remove('active');
+  overlay.classList.remove('on');
+})
