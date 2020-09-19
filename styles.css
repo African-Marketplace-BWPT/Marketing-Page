@@ -1,0 +1,582 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+/* root */
+:root {
+  --important-text: #2b2c2d;
+  --regular-text: #727272;
+  --orange: #f07736;
+  --green: #77925F;
+  --blue: #003348;
+  --beige: #D2B278;
+}
+
+
+/* Reset */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+  
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+  font-family: 'Poppins', sans-serif;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Utility */
+.important {
+  color: var(--orange);
+}
+
+hr {
+  border: 1px solid #dfdfdffe;
+  border-radius: 5px;
+}
+
+.wrapper {
+  width: 85%;
+  margin: 2rem auto;
+}
+
+/* Header */
+
+.logo {
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.5rem;
+  color: var(--orange);
+}
+
+/* Nav bar */
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.navbar ul a {
+  font-size: 1rem;
+  color: var(--important-text);
+  text-transform: lowercase;
+  text-decoration: none;
+  margin-right: 2rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.navbar ul a:hover {
+  color: var(--orange)
+}
+
+.navbar ul a:last-child {
+  color: #fff;
+  background: var(--orange);
+  text-transform: uppercase;
+  border: 2px solid var(--orange);
+  padding: .3rem 1.2rem;
+  border-radius: 5px;
+}
+
+
+
+.media-links i {
+  font-size: 1.2rem;
+  padding-left: 1rem;
+  color: var(--regular-text);
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.media-links i:hover {
+  color: var(--orange);
+}
+
+/* HR */
+
+.line {
+  border: 2px solid var(--orange);
+  border-radius: 5px;
+}
+
+
+/* Banner */
+.banner {
+  display: flex;
+  justify-content: space-around;
+  padding: 4rem 0;
+  margin-bottom: 1rem;
+}
+
+.banner img {
+  width: 45%;
+  height: auto;
+}
+
+.banner-info {
+  width: 45%;
+}
+
+.banner-info h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: var(--important-text)
+}
+
+.banner-info h4 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: .2rem;
+  margin-bottom: 2.5rem;
+  color: var(--regular-text);
+}
+
+.banner-info p {
+  margin-bottom: 2rem;
+  color: var(--regular-text);
+}
+
+.banner-info a {
+  text-decoration: none;
+  color: var(--orange);
+  padding: .3rem 1.2rem;
+  border: 2px solid var(--orange);
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.banner-info a:hover {
+  color: #fff;
+  background: var(--orange);
+}
+
+/* service section */
+
+section {
+  padding: 4rem 0;
+}
+
+.service h3 {
+  width: 13%;
+  overflow: hidden;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--important-text);
+  padding: 0 0.5rem .5rem 0;
+  border-bottom: 2px solid var(--orange);
+  margin-bottom: 2rem;
+}
+
+.serv-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.service-item {
+  width: 45%;
+  padding: 1rem;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-icon {
+  color: var(--orange);
+  font-size: 3rem; 
+  padding: 2rem;
+  border: 2px solid #e1e1e1;
+  border-radius: 50%;
+}
+
+.service-item-info {
+  margin-left: 1rem;
+  color: var(--regular-text);
+}
+
+.service-item-info h4 {
+  color: var(--important-text);
+  margin-bottom: .5rem;
+  font-weight: bold;
+}
+
+/* Reviews section */
+
+.rev-wrapper {
+  background: linear-gradient(#fff 10%, var(--orange));
+}
+
+.reviews {
+  width: 85%;
+  margin: 0 auto;
+}
+
+
+.reviews h3 {
+  width: 12%;
+  overflow: hidden;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--important-text);
+  padding: 0 0.5rem .5rem 0;
+  border-bottom: 2px solid var(--orange);
+  margin-bottom: 2rem;
+}
+
+.review-container {
+  width: 40%;
+  margin: 3rem auto;
+  text-align: center;
+  padding: 2rem;
+  background: #fff;
+  box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.75);
+
+}
+
+.review-container h4 {
+  color: var(--important-text);
+  font-weight: bold;
+  margin-bottom: .4rem;
+}
+
+.review-container p:nth-child(3){
+  color: var(--orange);
+  font-weight: bold;
+  margin-bottom: .8rem;
+}
+
+.review-container p:last-child {
+  color: rgb(33, 34, 52);
+}
+
+.review-container img {
+  width: 30%;
+  border-radius: 100%;
+  margin-bottom: 1rem;
+}
+
+.button-container {
+  margin-top: 2rem;
+}
+
+.button-container button {
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1.3rem;
+  color: var(--orange);
+  cursor: pointer;
+}
+
+.button-container i {
+  padding: 0 .5rem;
+}
+
+
+/* SIGN UP */
+
+.signup-wrapper {
+  background: var(--orange);
+ 
+}
+
+.sign-up {
+  width: 85%;
+  margin: 0 auto;
+  color: #fff;
+  text-align: center;
+}
+
+.sign-up h2 {
+  font-size: 2rem;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+.sign-up a {
+  text-decoration: none;
+  color: #fff;
+  letter-spacing: .3rem;
+  padding: .4rem 2rem;
+  font-size: 1.2rem;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.sign-up a:hover {
+  color: var(--orange);
+  background: #fff;
+}
+
+
+/* Tablet styles */
+
+@media screen and (max-width: 800px){
+  /* Banner section */
+  .banner-info {
+    font-size: .9rem;
+  }
+
+  .banner-info h1 {
+    font-size: 3.2rem;
+  }
+
+  .banner-info h4 {
+    font-size: .8rem;
+  }
+
+  .banner img {
+    width: 50%;
+    height: 50%;
+  }
+
+  /* Services section */
+  .serv-container {
+    font-size: .8rem;
+  }
+  
+  .service-icon {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .service h3 {
+    width: 14%;
+    font-size: 1.3rem;
+  }
+
+  /* Reviews Section */
+  .reviews h3 {
+    width: 13%;
+    font-size: 1.3rem;
+  }
+
+  .review-container {
+    width: 50%;
+  }
+
+  .review-container img {
+    width: 40%;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  /* Nav bar */
+
+  .logo {
+    width: 30%;
+    margin: 0;
+    position: relative;
+    top: 1.5rem;
+  }
+
+  .nav-container {
+    width: 25%;
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+
+   .navbar {
+     height: 50%;
+     width: 50%;
+     position: fixed;
+     right: -100rem;
+     top: 20rem;
+     display: flex;
+     opacity: 0;
+     transition: all 0.5s ease;
+     justify-content: flex-end;
+     align-items: center;
+   }
+
+   /* active class thats added with JS */
+   .navbar.active {
+    opacity: 1;
+    right: -.2rem;
+    transition: all 0.5s ease;
+    z-index: 99;
+   }
+
+   .navbar ul {
+     width: inherit;
+     height: inherit;
+     display: flex;
+     justify-content: space-between;
+     align-items: flex-end;
+     flex-direction: column;
+   }
+
+   .navbar ul a {
+     font-size: 1.2rem;
+     color: var(--important-text);
+     margin-bottom: 2rem;
+     padding: 0 .5rem 0 0;
+     border-right: 2px solid var(--orange);
+   }
+
+   .navbar ul a:last-child {
+     padding: .5rem 2rem;
+     text-align: center;
+     width: 60%;
+     border: none;
+   }
+
+   /* Toggle */
+   .navbar-toggle {
+     position: fixed;
+     top: 40rem;
+     left: 26.4rem;
+     background: var(--orange);
+     padding: .5rem .7rem;
+     /* border: 2px solid var(--regular-text); */
+     border-radius: 50%;
+     z-index: 999;
+   }
+
+   .navbar-toggle .bar {
+    cursor: pointer;
+    display: block;
+    width: 22px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: #fff;
+   }
+
+   #mobile-menu.is-active .bar:nth-child(2){
+    opacity: 0;
+   }
+   #mobile-menu.is-active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+   }
+   #mobile-menu.is-active .bar:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+   }
+
+   /* blur body */
+   #overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 2;
+    cursor: pointer;
+   }
+
+   #overlay.on {
+     display: block;
+   }
+
+
+  /* Banner section */
+  .banner {
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 0;
+  }
+
+  .banner-info {
+    width: 90%;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner-info a {
+    align-self: center;
+    padding: .8rem 1.5rem;
+  }
+
+  .banner img {
+    width: 100%;
+  }
+
+  /* Services */
+  .service h3 {
+    width: 21%;
+  }
+
+  .serv-container {
+    justify-content: center;
+  }
+
+  .service-item {
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 2rem;
+  }
+
+  .service-icon {
+    font-size: 4rem;
+    margin: 0 0 .8rem 0;
+  }
+
+  .service-item-info {
+    font-size: .9rem;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
+
+  .service-item-info h4 {
+    font-size: 1.2rem;
+  }
+
+  /* reviews */
+  .reviews h3 {
+    width: 21%;
+  }
+
+  .review-container img {
+    width: 60%;
+  }
+}
