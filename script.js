@@ -1,4 +1,3 @@
-
 // Toggle
 
 const menu = document.querySelector('#mobile-menu');
@@ -26,6 +25,7 @@ links.addEventListener('click', function() {
   menuLinks.classList.remove('active');
   overlay.classList.remove('on');
 });
+
 
 // Reviews functionality 
 
@@ -97,5 +97,4 @@ prevBtn.addEventListener('click', function() {
   }
   showPerson(currentItem);
 });
-
 
