@@ -1,3 +1,32 @@
+// Toggle
+
+const menu = document.querySelector('#mobile-menu');
+const menuLinks = document.querySelector('.navbar');
+const overlay = document.getElementById('overlay');
+const links = document.querySelector('.navbar > ul')
+
+// actives overlay and menu items
+menu.addEventListener('click', function(){
+  menu.classList.toggle('is-active');
+  menuLinks.classList.toggle('active');
+  overlay.classList.toggle('on');
+});
+
+// removes overlay and hides menu items when click anywhere on overlay
+overlay.addEventListener('click', function() {
+  menu.classList.remove('is-active');
+  menuLinks.classList.remove('active');
+  overlay.classList.remove('on');
+});
+
+// removes overlay and hides menu items when one of the links are clicked
+links.addEventListener('click', function() {
+  menu.classList.remove('is-active');
+  menuLinks.classList.remove('active');
+  overlay.classList.remove('on');
+});
+
+
 // Reviews functionality 
 
 const reviews = [
@@ -69,31 +98,3 @@ prevBtn.addEventListener('click', function() {
   showPerson(currentItem);
 });
 
-
-// Toggle
-
-const menu = document.querySelector('#mobile-menu');
-const menuLinks = document.querySelector('.navbar');
-const overlay = document.getElementById('overlay');
-const links = document.querySelector('.navbar > ul')
-
-// actives overlay and menu items
-menu.addEventListener('click', function(){
-  menu.classList.toggle('is-active');
-  menuLinks.classList.toggle('active');
-  overlay.classList.toggle('on');
-});
-
-// removes overlay and hides menu items when click anywhere on overlay
-overlay.addEventListener('click', function() {
-  menu.classList.remove('is-active');
-  menuLinks.classList.remove('active');
-  overlay.classList.remove('on');
-});
-
-// removes overlay and hides menu items when one of the links are clicked
-links.addEventListener('click', function() {
-  menu.classList.remove('is-active');
-  menuLinks.classList.remove('active');
-  overlay.classList.remove('on');
-})
