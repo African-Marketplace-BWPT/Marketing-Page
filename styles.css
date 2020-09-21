@@ -680,4 +680,44 @@ section {
   .review-container img {
     width: 60%;
   }
+
+  /* ABOUT PAGE */
+
+
+  /* about banner */
+  .about-banner h3 {
+    width: 52%;
+  }
+
+  .about-banner p {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+  }
+
+  /* team section */
+  .team h3 {
+    width: 30%;
+  }
+
+  .team-cards {
+    justify-content: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card img {
+    width: 50%;
+    margin-bottom: .3rem;
+  }
+
+  .card h4 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 1.1rem;
+  }
+
 }
