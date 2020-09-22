@@ -406,6 +406,10 @@ section {
   font-weight: bold;
 }
 
+.card h4 {
+  margin-bottom: .2rem;
+}
+
 .card .position {
   color: var(--orange);
   margin-bottom: 1rem;
