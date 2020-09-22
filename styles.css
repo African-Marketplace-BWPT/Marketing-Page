@@ -417,6 +417,45 @@ section {
 }
 
 
+
+/* FOOTER */
+
+footer {
+  background: var(--orange);
+  color: #fff;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 5rem;
+}
+
+.foot-logo {
+  font-weight: bold;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.foot-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.foot-links {
+  font-size: 1.2rem;
+  color: #fff;
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.foot-links i {
+  padding-left: 1rem;
+}
+
+
 /* MEDIA QUERIESSS!!!! */
 
 /* Tablet styles */
@@ -468,6 +507,7 @@ section {
   .review-container img {
     width: 40%;
   }
+
 
   /* About page */
 
@@ -718,6 +758,42 @@ section {
 
   .card p {
     font-size: 1.1rem;
+  }
+
+  /* footer */
+  footer {
+    background: var(--orange);
+    color: #fff;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+  .foot-container {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .foot-logo {
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+  }
+  
+  .foot-links {
+    font-size: 1.2rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .foot-links i {
+    padding: 0 .8rem .5rem .8rem;
   }
 
 }
