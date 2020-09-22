@@ -353,7 +353,7 @@ section {
 
 
 
-/* About page */
+/* ABOUT PAGE */
 
 /* how it started */
 .about-banner h3 {
@@ -406,6 +406,10 @@ section {
   font-weight: bold;
 }
 
+.card h4 {
+  margin-bottom: .2rem;
+}
+
 .card .position {
   color: var(--orange);
   margin-bottom: 1rem;
@@ -417,6 +421,124 @@ section {
 }
 
 
+/* CONTACT PAGE */
+
+.get-in-touch h3 {
+  width: 13%;
+  overflow: hidden;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--important-text);
+  padding: 0 0.5rem .5rem 0;
+  border-bottom: 2px solid var(--orange);
+  margin-bottom: 2rem;
+}
+
+.git-container {
+  background: var(--orange);
+  border-radius: 10px;
+  height: 80vh;
+  color: #fff;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* form */
+
+.form {
+  width: 45%;
+  padding: 5rem 0;
+  font-family: inherit;
+}
+
+.form label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  text-transform: uppercase;
+  font-family: 'Poppins', sans-serif;
+}
+
+input {
+  margin-bottom: 2rem;
+  width: 80%;
+  height: 2rem;
+  border-radius: 5px;
+  border: none;
+  background: #f7915a;
+}
+
+textarea {
+  width: 80%;
+  border-radius: 5px;
+  border: none;
+  background: #f7915a;
+  margin-bottom: 2rem;
+  color: #fff;
+  padding: .6rem .5rem;
+}
+
+.form .buttons {
+  display: flex;
+}
+
+.buttons li {
+  width: 40%;
+}
+
+ .buttons li:last-child {
+   width: 20%;
+ }
+
+ input[value] {
+   text-transform: uppercase;
+   color: #fff;
+ }
+ 
+ .send-btn[value] {
+   background: #fff;
+   color: var(--orange)
+ }
+
+ input[type="text"],
+ input[type="email"] {
+  color: #fff;
+  padding: 0 0.5rem;
+ }
+ input:focus, textarea:focus, select:focus {
+   outline: none;
+ }
+
+ .contact-container {
+  width: 35%;
+  margin: 0rem 0;
+ }
+
+
+.contact-info {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 4rem 0;
+}
+
+.contact-info i {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.contact-info i span {
+  font-family: 'Poppins';
+  padding-left: 1rem;
+}
+
+.contact-info p {
+  padding: 0 2.5rem;
+}
+
+.contact-info.third p {
+  padding: 0 3rem;
+}
 
 /* FOOTER */
 
@@ -509,7 +631,7 @@ footer {
   }
 
 
-  /* About page */
+  /* TABLE ABOUT PAGE */
 
   /* about banner */
   .about-banner h3 {
@@ -543,6 +665,41 @@ footer {
     font-size: 1.1rem;
   }
 
+  /* TABLET CONTACT PAGE */
+  .buttons li {
+    width: 50%;
+  }
+  
+   .buttons li:last-child {
+     width: 30%;
+   }
+
+   input {
+    width: 90%;
+   }
+
+   textarea {
+     width: 90%;
+   }
+
+   .contact-container {
+    width: 30%;
+    padding: 0;
+   }
+
+   .contact-info i {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+
+  .contact-info p {
+    padding: 0 2.5rem;
+  } 
+  
+  .contact-info.third p {
+    padding: 0 2.2rem;
+  }
+  
 }
 
 @media screen and (max-width: 500px) {
@@ -721,7 +878,8 @@ footer {
     width: 60%;
   }
 
-  /* ABOUT PAGE */
+
+  /* MOBILE ABOUT PAGE */
 
 
   /* about banner */
@@ -758,6 +916,45 @@ footer {
 
   .card p {
     font-size: 1.1rem;
+  }
+
+
+  /* MOBILE CONTACT PAGE */
+
+  .get-in-touch h3 {
+    width: 35%;
+  }
+
+  .git-container {
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .form {
+    width: 100%;
+    padding: 2rem 2rem;
+  }
+
+  input {
+    width: 80%;
+  }
+
+  textarea {
+    width: 80%;
+  }
+
+  .contact-container {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .contact-info {
+    align-items: center;
+  }
+
+  .contact-info.third p {
+    width: 40%;
   }
 
   /* footer */

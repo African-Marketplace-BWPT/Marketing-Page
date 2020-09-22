@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | African Marketing Page</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="https://kit.fontawesome.com/4ce904a7cc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <!-- overlay -->
+  <div id="overlay" onclick="off()"></div>
+  <div class="wrapper">
+    <!-- Header -->
+    <header>
+      <h3 class="logo">GROW</h3>
+    <!-- Toggle Menu -->
+      <div class="navbar-toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    <!-- Nav Bar -->
+      <div class="nav-container">
+      <nav class="navbar">
+        <ul>
+          <a href="index.html">Home</a>
+          <a href="/about.html">About</a>
+          <a href="/contact.html">Contact</a>
+          <a href="#">sign in</a>
+        </ul>
+      </nav>
+      <!-- Social media links -->
+      <div class="media-links">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-facebook-f"></i>
+      </div>
+    </div>
+    <!-- HR for decor -->
+    <hr class="line">
+    </header>
+    
+    <main>
+      <section class="get-in-touch">
+        <h3>Get in touch</h3>
+        <div class="git-container">
+          <div class="form">
+            <form>
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name">
+              <label for="name">Email</label>
+              <input type="email" name="email" id="email">
+              <label for="message">Message</label>
+              <textarea name="message" id="message" cols="30" rows="10"></textarea>
+              <ul class="buttons">
+                <li>
+                  <input type="submit" value="Send Message" class="send-btn">
+                </li>
+                <li>
+                  <input type="reset" value="Clear">
+                </li>
+              </ul>
+            </form>
+          </div>
+          <div class="contact-container">
+            <div class="contact-info first">
+              <i class="fas fa-envelope-square"><span>Email</span></i>
+              <p><email:to>info@grow.dev</email:to></p>
+            </div>
+            <div class="contact-info second">
+              <i class="fas fa-phone-square"><span>Phone</span></i>
+              <p>(000)000-0000</p>
+            </div>
+            <div class="contact-info third">
+              <i class="fas fa-map-marked-alt"><span>Address</span></i>
+              <p>123 Somewhere Rd. Over The Rainbow, Hawaii </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <h3 class="foot-logo">GROW</h3>
+    
+    <!-- Nav Bar -->
+    <div class="foot-container">
+    <p>&copy; Copyright 2020 GROW</p>
+    <!-- Social media links -->
+    <div class="foot-links">
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-facebook-f"></i>
+    </div>
+  </div>
+  </footer>
+
+  <script src="/script.js"></script>
+</body>
+</html>
